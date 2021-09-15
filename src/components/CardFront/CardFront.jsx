@@ -1,27 +1,39 @@
 import React from 'react';
 
-const CardFront = () => {
+const CardFront = (props) => {
+  const {
+    abv,
+    ibu,
+    image_url,
+    name,
+    ph,
+    tagline
+  } = props.beer;
+
+  const {yearBrewed} = props;
+  const isClassic =  yearBrewed < 2010 ? "Classic" : "";
+
   return (
     <div>
-      <div><p>Classic</p></div>
-      <img src="" alt="beer branding" />
-      <h2>PUNK IPA</h2>
+      <div><p>{isClassic}</p></div>
+      <img src={image_url} alt="beer branding"/>
+      <h2>{name}</h2>
       <div>
         <div>
           <p>ABV</p>
-          <p>6%</p>
+          <p>{abv}</p>
         </div>
         <div>
           <p>IBU</p>
-          <p>60</p>
+          <p>{ibu}</p>
         </div>
         <div>
           <p>PH</p>
-          <p>4.4</p>
+          <p>{ph}</p>
         </div>
       </div>
-      <h3>Post Moden Classic. Spicy. Tropical. Hoppy.</h3>
-      <button>></button>
+      <h3>{tagline}</h3>
+      <button>Click</button>
     </div>
   )
 }

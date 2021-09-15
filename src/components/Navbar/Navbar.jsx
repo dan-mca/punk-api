@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Navbar.module.scss';
+// import styles from './Navbar.module.scss';
 import SearchBox from '../SearchBox';
 
 const Navbar = () => {
