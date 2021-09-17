@@ -3,11 +3,7 @@ import styles from './Card.module.scss';
 import CardFront from '../CardFront';
 import CardBack from '../CardBack';
 
-// import beers from '../../data/beers';
-
-
 const Card = (props) => {
-  // const beer = beers[2];
   const { beer } = props;
   
   const ingredientList = (type) => {

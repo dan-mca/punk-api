@@ -1,27 +1,28 @@
 @import "../../variables.scss";
 
-.filtersContainer {
+.subHeader {
+  background-color: $black;
+  height: 60px;
+  color: $white;
+  padding: 10px 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 50%;
 
-  h3 {
-    font-weight: 400;
-    padding-right: 20px;
-  }
-
-  .filters {
+  .filtersContainer {
     display: flex;
-    justify-content: space-around;
-    width: 75%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 
-    button{
-      width: 30%;
-      background-color: $white;
-      color: $black;
-      font-size: $p-size;
-      cursor: pointer;
+    h3 {
+      font-weight: 400;
+      padding-right: 20px;
+    }
+
+    .filters {
+      display: flex;
+      justify-content: space-around;
+      width: 75%;
     }
   }
 }

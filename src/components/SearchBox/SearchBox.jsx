@@ -6,8 +6,7 @@ const SearchBox = (props) => {
 
   return (
     <div className={styles.searchContainer}>
-      <input type="text" placeholder="Search beers" onInput={(e) => updateSearchText(e.target.value)} />
-      <button>Search</button>
+      <input type="text" placeholder="Search beers" onInput={(e) => updateSearchText(e.target.value.toLowerCase())} />
     </div>
   )
 }

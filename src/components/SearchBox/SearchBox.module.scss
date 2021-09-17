@@ -9,8 +9,14 @@
     font-size: $h4-size;
     border: 1px solid transparent;
     background-color: $blue;
-    border-bottom: 1px solid white;
-    color: white;
+    border-bottom: 1px solid $white;
+    color: $white;
+    outline: none;
+    opacity: 0.9;
+
+    &::placeholder {
+      color: $white;
+    }
   }
 
   button {

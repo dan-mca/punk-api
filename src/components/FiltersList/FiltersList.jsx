@@ -1,16 +1,22 @@
 import React from 'react';
 import styles from './FiltersList.module.scss';
+import FilterItem from '../FilterItem';
 
-const FiltersList = () => {
+const FiltersList = (props) => {
+  const { filterClicked } = props;
+
   return (
-    <div className={styles.filtersContainer}>
-      <h3>Filter beers:</h3>
-      <div className={styles.filters}>
-        <button>Classic Range</button>
-        <button>High Alocohol</button>
-        <button>High Acidity</button></div>
-    </div>
+    <section className={styles.subHeader}>
+      <div className={styles.filtersContainer}>
+        <h3>Filter beers:</h3>
+        <div className={styles.filters}>
+          <FilterItem filterName="Classic Range" buttonValue={"classic"} filterClicked={filterClicked}/>
+          <FilterItem filterName="High Alcohol" buttonValue={"highABV"} filterClicked={filterClicked} />
+          <FilterItem filterName="High Acidity" buttonValue={"highPH"} filterClicked={filterClicked} />
+        </div>
+      </div>
+    </section>
   )
 }
 
-export default FiltersList
+export default FiltersList;

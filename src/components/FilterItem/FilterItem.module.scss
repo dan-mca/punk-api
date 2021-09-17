@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.filterButton {
+  width: 30%;
+  background-color: $white;
+  color: $black;
+  font-size: $p-size;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+}

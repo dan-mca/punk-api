@@ -2,31 +2,38 @@ import React, { useState, useEffect } from 'react'
 import styles from './App.module.scss';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
-import SubHeader from './components/SubHeader';
 import beersData from  './data/beers';
 
-import library from "./data/fa-library";
+import library from './data/fa-library';
+import FiltersList from './components/FiltersList';
 
 function App() {
   const [beers, setBeers] = useState([]);
   
   // filter beers based on search term and setBeers with the filtered array
-  const fetchBeers = (searchText) => {
+  const getBeers = (searchText) => {
     const result = beersData.filter((beer) => beer.name.toLowerCase().includes(searchText));
     setBeers(result);
   }
 
-  console.log(beers);
+  
+  const getFilterdBeers = (filterBy) => {
+    const filteredBeers = beersData.filter((beer) => {
+      if (beer.first_brewed.slice(3,7) < 2010 && filterBy === "classic") { return beer}
+      if (beer.abv > 6 && filterBy === "highABV") { return beer}
+      if (beer.ph < 4 && filterBy === "highPH") { return beer}
+    });
+    setBeers(filteredBeers)
+  }
 
   useEffect(() => {
-    fetchBeers(beers);
+    getBeers(beers);
   }, []);
-
 
   return (
     <>
-      <Navbar updateSearchText={fetchBeers}/>
-      <SubHeader />
+      <Navbar updateSearchText={getBeers}/>
+      <FiltersList filterClicked={getFilterdBeers}  />
       <Main beers={beers}/>
     </>
   );
