@@ -1,0 +1,19 @@
+@import "../../variables.scss";
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  input {
+    font-size: $h4-size;
+    border: 1px solid transparent;
+    background-color: $blue;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+
+  button {
+    font-size: $h4-size;
+  }
+}

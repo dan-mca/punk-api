@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap');
+
+$font-family: 'Oswald', sans-serif;
+$h1-size: 30px;
+$h2-size: 25px;
+$h3-size: 20px;
+$h4-size: 18px;
+$p-size: 16px;
+
+
+$blue: #4AB0DB;
+$green: #5EBF8F;
+$yellow: #D0EC23;
+$black: #000;
+$white: #fff;
+$grey: #4c4c4c;
+
+.cardArrow {
+  background: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: $h4-size;
+
+  &:hover {
+    color: $blue;
+  }
+}

@@ -1,0 +1,10 @@
+@import "../../variables.scss";
+
+.subHeader {
+  background-color: $black;
+  height: 60px;
+  color: $white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}

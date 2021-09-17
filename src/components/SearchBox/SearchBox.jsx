@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import styles from './SearchBox.module.scss';
 
 const SearchBox = () => {
   return (
-    <div>
-      SearchBox works
+    <div className={styles.searchContainer}>
+      <input type="text" placeholder="Search beers" />
+      <button>Search</button>
     </div>
   )
 }
 
-export default SearchBox
+export default SearchBox;
