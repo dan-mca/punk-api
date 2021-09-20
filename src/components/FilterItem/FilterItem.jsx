@@ -1,17 +1,17 @@
-import React from 'react';
-import styles from './FilterItem.module.scss';
+import React, { useState } from 'react';
+// import styles from './FilterItem.module.scss';
+import './styles.css';
 
 const FilterItem = (props) => {
-  const { filterName, buttonValue, filterClicked } = props;
+  const {name, classname, filterClicked} = props;
+
+  const handleFilterClick = (e) => {
+    filterClicked(e.target.value);
+  };
 
   return (
-    <>
-      <button className={styles.filterButton} value={buttonValue}onClick={(e) => filterClicked(e.target.value)}
-      >
-        {filterName}
-      </button>
-    </>
-  )
-}
+    <button className={classname} onClick={handleFilterClick} value={name}>{name}</button>
+  );
+};
 
 export default FilterItem;

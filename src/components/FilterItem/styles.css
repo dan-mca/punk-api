@@ -1,0 +1,39 @@
+.filterButton {
+  width: 30%;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.filterButton.toggled {
+  width: 30%;
+  background-color: #4AB0DB;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.clearButton {
+  width: 30%;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.clearButton.toggled {
+  width: 30%;
+  background-color: #4AB0DB;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+}

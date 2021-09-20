@@ -30,6 +30,7 @@
       max-height: 115px;
       overflow: scroll;
       overflow-x: hidden;
+      overflow-y: auto;
 
       &::-webkit-scrollbar-track {
         box-shadow: inset 0 0 6px $grey;
@@ -67,6 +68,8 @@
 
   .buttonBack {
     padding-top: 10px;
+    position: absolute;
+    bottom: 10px;
   }
 
 

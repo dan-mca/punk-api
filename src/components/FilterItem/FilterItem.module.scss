@@ -2,8 +2,18 @@
 
 .filterButton {
   width: 30%;
-  background-color: $white;
+  background-color: red;
   color: $black;
+  font-size: $p-size;
+  cursor: pointer;
+  height: 32px;
+  padding: 0 16px;
+}
+
+.filterButtonFocused {
+  width: 30%;
+  background-color: $green;
+  color: $white;
   font-size: $p-size;
   cursor: pointer;
   height: 32px;

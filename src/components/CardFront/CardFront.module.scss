@@ -40,8 +40,8 @@
 
   .oval {
     border-radius: 10px;
-    width: 38px;
-    height: 48px;
+    width: 48px;
+    height: 58px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,9 +65,15 @@
 .tagline {
   text-align: center;
   padding: 0 20px;
+  max-height: 29px;
+  overflow: hidden;
 }
 
 .buttonFront {
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  padding-right: 20px;
+  position: absolute;
+  bottom: 10px;
 }

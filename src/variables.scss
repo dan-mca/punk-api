@@ -15,6 +15,10 @@ $black: #000;
 $white: #fff;
 $grey: #4c4c4c;
 
+$card-shadowing: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
+$card-hover-shadowing: 0 14px 28px rgba(0, 0, 0, 0.27),
+  0 10px 10px rgba(0, 0, 0, 0.3);
+
 .cardArrow {
   background: none;
   border: 1px solid transparent;
@@ -25,3 +29,18 @@ $grey: #4c4c4c;
     color: $blue;
   }
 }
+
+%card {
+  max-height: 470px;
+  max-width: 280px;
+  height: 100%;
+  width: 100%;
+  border-radius: px;
+  box-shadow: $card-shadowing;
+  border: $blue;
+  backface-visibility: hidden;
+  background-color: $white;
+  position: absolute;
+  padding: 20px 0;
+}
+

@@ -37,19 +37,19 @@ const CardFront = (props) => {
         <section className={styles.beerStats}>
           <div className={classnames(styles.oval, styles.abv)}>
             <p>ABV</p>
-            <p>{abv}%</p>
+            <p>{abv ? abv.toFixed(1) : "n/a"}%</p>
           </div>
           <div className={classnames(styles.oval, styles.ibu)}>
             <p>IBU</p>
-            <p>{ibu}</p>
+            <p>{ibu ? ibu.toFixed(1) : "n/a"}</p>
           </div>
           <div className={classnames(styles.oval, styles.ph)}>
             <p>PH</p>
-            <p>{ph}</p>
+            <p>{ph ? ph.toFixed(1) : "n/a"}</p>
           </div>
         </section>
         
-        <div className={styles.buttonFront}><button className={styles.cardArrow}><FontAwesomeIcon icon="chevron-down" /></button></div>
+        <div className={styles.buttonFront}><button className={styles.cardArrow}><FontAwesomeIcon icon="arrow-right" /></button></div>
         
       </div>
     </>
