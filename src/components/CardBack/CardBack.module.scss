@@ -2,11 +2,16 @@
 
 .cardBack {
   padding: 0px 20px;
+  
+  .nameABV {
+  max-height: 38px;
+  overflow: hidden;
 
-  .nameABV span {
-    color: $blue;
-    font-size: $h3-size !important;
-    font-weight: 400!important;
+    span {
+      color: $blue;
+      font-size: $h3-size !important;
+      font-weight: 400!important;
+    }
   }
 
   .firstBrewed {
@@ -58,6 +63,8 @@
     .malt, .hops, .yeast {
       display: flex;
       padding: 5px 0;
+      max-height: 54px;
+      overflow: hidden;
 
       p {
         color: $grey;

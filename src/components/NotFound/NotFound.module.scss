@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.notFound {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $black;
+}

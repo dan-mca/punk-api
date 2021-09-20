@@ -3,6 +3,7 @@ import styles from './App.module.scss';
 import Navbar from './components/Navbar';
 import Main from './components/Main';
 import FiltersList from './components/FiltersList';
+import NotFound from './components/NotFound';
 
 import library from './data/fa-library';
 
@@ -44,11 +45,15 @@ function App() {
     setBeers(filteredBeers)
   }
 
+  const mainContent = beers && beers.length ? 
+    <Main beers={beers}/> : 
+    <NotFound header={"No results"} text={"Search again or try using the search filters"}/>
+
   return (
     <>
       <Navbar updateSearchText={getBeers}/>
       <FiltersList selectedFilter={getFilterdBeers} />
-      <Main beers={beers}/>
+      {mainContent}
     </>
   );
 }
