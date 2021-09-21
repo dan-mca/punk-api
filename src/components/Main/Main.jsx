@@ -4,6 +4,7 @@ import Card from '../Card';
 
 const Main = (props) => {
   const { beers } = props;
+  
   const getCardJsx = (beer) => (
     <div className={styles.card} key={beer.id}>
       <Card beer={beer} />

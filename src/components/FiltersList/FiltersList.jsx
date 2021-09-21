@@ -13,6 +13,7 @@ const FiltersList = (props) => {
     { name: "Clear Filters" },
   ];
 
+  // get filter clicked to be used to toggle style on button click and further up in App.jsx to filter results
   const updateSelectedFilter = (filter) => {
     setCurrentFilter(filter)
     selectedFilter(filter);

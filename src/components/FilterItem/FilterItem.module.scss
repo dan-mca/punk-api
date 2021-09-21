@@ -10,12 +10,8 @@
   padding: 0 16px;
 }
 
-.filterButtonFocused {
-  width: 30%;
-  background-color: $green;
-  color: $white;
-  font-size: $p-size;
-  cursor: pointer;
-  height: 32px;
-  padding: 0 16px;
+@media only screen and (max-width: 480px) {
+  .filterButton {
+    width: 70%;
+  }
 }

@@ -1,39 +1,33 @@
 .filterButton {
-  width: 30%;
+  width: 22%;
   background-color: white;
   color: black;
   font-size: 16px;
   cursor: pointer;
   height: 32px;
   padding: 0 16px;
+  border: 1px solid white;
 }
 
 .filterButton.toggled {
-  width: 30%;
   background-color: #4AB0DB;
   color: white;
-  font-size: 16px;
-  cursor: pointer;
-  height: 32px;
-  padding: 0 16px;
+  border: 1px solid #4AB0DB;
 }
 
 .clearButton {
-  width: 30%;
+  width: 22%;
   background-color: black;
   color: white;
   font-size: 16px;
   cursor: pointer;
   height: 32px;
   padding: 0 16px;
+  border: 1px solid white;
 }
 
-.clearButton.toggled {
-  width: 30%;
-  background-color: #4AB0DB;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  height: 32px;
-  padding: 0 16px;
+@media only screen and (max-width: 480px) {
+  .filterButton, .clearButton {
+    width: 70%;
+  }
 }

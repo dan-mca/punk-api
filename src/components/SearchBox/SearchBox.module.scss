@@ -23,3 +23,18 @@
     font-size: $h4-size;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .searchContainer {
+    
+    input {
+      background-color: $white;
+      border-bottom: 1px solid $black;
+      color: black;
+
+      &::placeholder {
+        color: $black;
+      }
+    }
+  }
+}

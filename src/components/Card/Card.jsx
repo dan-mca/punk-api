@@ -9,12 +9,13 @@ const Card = (props) => {
 
   const flipStyles = isFaceDown ? styles.faceDown : "";
   
+  // get list of sub ingredients based on ingredient type (malt or hops) and return as a list
   const ingredientList = (type) => {
-    let maltArr = [];
+    let ingredientsArr = [];
     type.forEach((malt) => {
-      maltArr.push(` ${malt.name}`);
+      ingredientsArr.push(` ${malt.name}`);
     })
-    return maltArr.toString();
+    return ingredientsArr.toString();
   };
   
   const yearBrewed = beer.first_brewed.slice(3, 7);

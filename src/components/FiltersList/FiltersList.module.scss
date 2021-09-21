@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 65%;
 
     h3 {
       font-weight: 400;
@@ -22,7 +22,28 @@
     .filters {
       display: flex;
       justify-content: space-around;
-      width: 75%;
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .subHeader {
+    height: 25vh;
+    padding: 10px 0;
+
+    .filtersContainer {
+      width: 100%;
+      flex-direction: column;
+
+      .filters {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 80%;  
+        width: 100%
+
+      }
     }
   }
 }

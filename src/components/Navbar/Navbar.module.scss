@@ -13,4 +13,44 @@ header {
     text-transform: uppercase;
     text-decoration: none;
   }
+
+  .searchContainer {
+
+    .mobileFilter {
+      background: none;
+      border: 1px solid transparent;
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 0 0 0;
+
+    h1 {
+      width: 100%;
+      padding: 0 20px 10px 20px;
+    }
+
+    .searchContainer {
+      height: 7vh;
+      padding: 0 20px;
+      background: $white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .mobileFilter {
+        background: none;
+        border: 1px solid transparent;
+        padding-left: 10px;
+        display: block;
+      }
+    }
+  }
 }
