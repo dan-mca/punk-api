@@ -24,12 +24,12 @@ describe("FilterItem tests", () => {
   // })
 
   // it("should toggle classes when class", () => {
-  //   expect(component.find('.filterButton').hasClass('toggled')).toBe(false);
+  //   expect(component.find('.filterButton').at(0).hasClass('toggled')).toBe(false);
 
-  //   component.find('.filterButton').simulate('click');
-  //   expect(component.find('.filterButton').hasClass('toggled')).toBe(true);
+  //   component.find('.filterButton').at(0).simulate('click');
+  //   expect(component.find('.filterButton').at(0).hasClass('toggled')).toBe(true);
 
-  //   component.find('.filterButton').simulate('click');
-  //   expect(component.find('.filterButton').hasClass('toggled')).toBe(false);
+  //   component.find('.filterButton').at(0).simulate('click');
+  //   expect(component.find('.filterButton').at(0).hasClass('toggled')).toBe(false);
   // })
 })

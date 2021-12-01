@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 import FiltersList from './components/FiltersList';
 import NotFound from './components/NotFound';
-
 import library from './data/fa-library';
 
 import { getPunkBeers } from './services/beers.service';
@@ -34,7 +33,7 @@ function App() {
   // filter beers based on filter selection
   const getFilterdBeers = (filterBy) => {
     const filteredBeers = beersData.filter((beer) => {
-      if (beer.first_brewed.slice(3,7) < 2010 && filterBy === "Classic Range"
+      if ((beer.first_brewed.slice(3,7) < 2010 && filterBy === "Classic Range")
         || (beer.abv > 6 && filterBy === "High ABV")
         || (beer.ph < 4 && filterBy === "High PH")
       ) { 

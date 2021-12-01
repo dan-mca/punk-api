@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Navbar.module.scss';
 import SearchBox from '../SearchBox';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = (props) => {
-  const {updateSearchText, expanded} = props;
+  const {updateSearchText} = props;
 
 
   return (

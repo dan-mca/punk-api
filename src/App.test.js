@@ -1,6 +1,8 @@
 import React from 'react';
 import App from './App';
 import { shallow } from 'enzyme';
+// import { getPunkBeers } from './services/beers.service';
+
 
 describe("NotFound tests", () => {
   let component;
@@ -13,5 +15,5 @@ describe("NotFound tests", () => {
     expect(component).toBeTruthy();
   })
 
-
 })
+
