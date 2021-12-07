@@ -27,6 +27,7 @@ I created a design in Figma based on the requirements before starting the develo
 ## Built with
 - React
 - SASS
+- React Testing Library - [example test](https://github.com/dan-mca/punk-api/blob/main/src/components/CardFront/CardFront.test.js)
 
 ## Available Scripts
 
